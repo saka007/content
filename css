@@ -1,0 +1,133 @@
+/*
+/*
+*	FORM
+*/
+form label {
+	color: rgb(0,0,0);
+	display: block;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.25em;
+	margin: .75em 0;	
+}
+
+	form input[type="text"],
+	form input[type="email"],
+	form input[type="number"],
+	form input[type="search"],
+	form input[type="password"],
+	form textarea {
+		background-color: rgb(255,255,255);
+		border: 1px solid rgb( 186, 186, 186 );
+		border-radius: 1px;
+		box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+		display: block;
+		font-size: .65em;
+		margin: 6px 0 12px 0;
+		padding: .8em .55em;	
+		text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+		transition: all 400ms ease;
+		width: 90%;
+	}
+	
+	form input[type="text"]:focus,
+	form input[type="email"]:focus,
+	form input[type="number"]:focus,
+	form input[type="search"]:focus,
+	form input[type="password"]:focus,
+	form textarea:focus,
+	form select:focus { 
+		border-color: #4195fc;
+		box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px #4195fc;
+	}
+	
+		form input[type="text"]:invalid:focus,
+		form input[type="email"]:invalid:focus,
+		form input[type="number"]:invalid:focus,
+		form input[type="search"]:invalid:focus,
+		form input[type="password"]:invalid:focus,
+		form textarea:invalid:focus,
+		form select:invalid:focus { 
+			border-color: rgb(248,66,66);
+			box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px rgb(248,66,66);
+		}
+	
+form button {
+	background-color: #50c1e9;
+	border: 1px solid rgba(0,0,0,.1);
+	color: rgb(255,255,255);
+	font-family: 'Varela Round', sans-serif;
+	font-size: .85em;
+	padding: .55em .9em;
+	transition: all 400ms ease;	
+}
+
+	form button:hover {
+		background-color: #1bc5b3;
+		cursor: pointer;
+	}
+	
+.abcd{
+background: url(../video1.jpg);
+ background-repeat : no-repeat; 
+background-size: cover; z-index: 1; 
+width: 854px; height: 480px; 
+margin: 100px auto auto;
+ position: absolute; 
+ top:0;
+ left:0; 
+ bottom:0; 
+ right:0; 
+ z-index: 1; 
+ border: 20px solid rgba(255, 0, 0, 0.3);
+ cursor:pointer;
+
+}
+.player-play {
+	width: 854px;
+	height: 480px;
+	background: url(../inactive-button.png) no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.player-play:hover {
+	background : url(../active-button.png) no-repeat;
+}
+	
+
+
+a.selected {
+  background-color:#1F75CC;
+  color:white;
+  z-index:100;
+}
+
+.messagepop {
+ background-color: #FFFFFF;
+border: 1px solid #999999;
+cursor: default;
+display: none;
+margin-top: 15px;
+position: absolute;
+text-align: left;
+width: 500;
+left: 350;
+height: 300;
+top: 171;
+z-index: 50;
+padding: 25px 25px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+
+.messagepop p, .messagepop.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 8px 0;
+  padding-bottom: 8px;
+}
